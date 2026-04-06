@@ -4,13 +4,32 @@
       "name": "Win32",
       "includePath": [
         "${workspaceFolder}/**",
-        "C:/Program Files/OpenSSL-Win64/include"
+        "C:/Program Files/OpenSSL-Win64/include",
+        "C:/mysql-connector/mysql-connector-c++-9.6.0-winx64/lib64"
       ],
       "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
       "compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
       "cStandard": "c17",
       "cppStandard": "c++17",
       "intelliSenseMode": "windows-gcc-x64"
+    },
+    {
+      "name": "C:\\mysql-connector\\bin",
+      "includePath": ["${workspaceFolder}/**"],
+      "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
+      "compilerPath": "cl.exe",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-msvc-x64"
+    },
+    {
+      "name": "C:\\mysql-connector\\mysql-connector-c++-9.6.0-winx64\\include",
+      "includePath": ["${workspaceFolder}/**"],
+      "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
+      "compilerPath": "cl.exe",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-msvc-x64"
     }
   ],
   "version": 4

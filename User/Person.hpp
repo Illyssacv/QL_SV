@@ -1,7 +1,7 @@
 #include <iostream>
 #include <chrono>
-#include "Role.cpp"
-#include "IsActive.cpp"
+#include "types/Role.cpp"
+#include "types/IsActive.cpp"
 
 using namespace std;
 class Person
@@ -10,14 +10,17 @@ protected:
     string id;
     string fullName;
     string email;
+    string phoneNumber;
     std::chrono::system_clock::time_point createdAt;
     std::chrono::system_clock::time_point birthDate;
+    //
 
+    //
+    string userName;
+    string password;
     //
     Role role;
     IsActive isActive;
-    string userName;
-    string password;
 
 public:
     Person(string fullName, Role role, IsActive isActive, std::chrono::system_clock::time_point birthDate, string userName, string password)
