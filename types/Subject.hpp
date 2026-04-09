@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-enum Subject
+enum class Subject
 {
     // Khối đại cương
     CALCULUS,          // Giải tích

@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-enum IsActive
+enum class IsActive
 {
     Active,
     Inactive,

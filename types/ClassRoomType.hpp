@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-enum classType
+enum class ClassRoomType
 {
     Lecture,
     Lab,

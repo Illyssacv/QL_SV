@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
-enum Role
+enum class Role
 {
     Admin,
-    Teacher,
+    Instructor,
     Student
 };

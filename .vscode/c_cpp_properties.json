@@ -5,7 +5,8 @@
       "includePath": [
         "${workspaceFolder}/**",
         "C:/Program Files/OpenSSL-Win64/include",
-        "C:/mysql-connector/mysql-connector-c++-9.6.0-winx64/lib64"
+        "C:/mysql-connector/mysql-connector-c++-9.6.0-winx64/include",
+        "C:/mysql-connector/mysql-connector-c++-9.6.0-winx64/include/jdbc"
       ],
       "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
       "compilerPath": "C:/msys64/ucrt64/bin/g++.exe",

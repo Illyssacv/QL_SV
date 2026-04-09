@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-enum Grade
+enum class Grade
 {
     Excellent,
     Good,
