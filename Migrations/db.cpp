@@ -58,7 +58,15 @@ int main()
         {
             cerr << "Error creating table: " << e.what() << endl;
         }
-
+        stmt->excute("CREATE TABLE IF NOT EXISTS class(id INT PRIMARY KEY AUTO_INCREMENT )");
+        stmt->excute("CREATE TABLE IF NOT EXISTS course(id INT PRIMARY KEY AUTO_INCREMENT, courseName VARCHAR(255), credits INT, department VARCHAR(255), instructor VARCHAR(255), capacity INT, schedule DATETIME)");
+        stmt->excute("CREATE TABLE IF NOT EXISTS enrollment(id INT PRIMARY KEY AUTO_INCREMENT, studentId INT, courseId INT, grade VARCHAR(50), createdAt DATETIME)");
+        stmt->excute("CREATE TABLE IF NOT EXISTS assignment(id INT PRIMARY KEY AUTO_INCREMENT, courseId INT, title VARCHAR(255), description TEXT, dueDate DATETIME, createdAt DATETIME)");
+        stmt->excute("CREATE TABLE IF NOT EXISTS submission(id INT PRIMARY KEY AUTO_INCREMENT, assignmentId INT, studentId INT, fileUrl VARCHAR(255), createdAt DATETIME)");
+        stmt->excute("CREATE TABLE IF NOT EXISTS notification(id INT PRIMARY KEY AUTO_INCREMENT, title VARCHAR(255), message TEXT, createdAt DATETIME)");
+        stmt->excute("CREATE TABLE IF NOT EXISTS message(id INT PRIMARY KEY AUTO_INCREMENT, senderId INT, receiverId INT, message TEXT, createdAt DATETIME)");
+        stmt->excute("CREATE TABLE IF NOT EXISTS payment(id INT PRIMARY KEY AUTO_INCREMENT, studentId INT, amount INT, createdAt DATETIME)");
+        stmt->excute("CREATE TABLE IF NOT EXISTS invoice(id INT PRIMARY KEY AUTO_INCREMENT, studentId INT, amount INT, createdAt DATETIME)");
         delete stmt;
         delete con;
     }
